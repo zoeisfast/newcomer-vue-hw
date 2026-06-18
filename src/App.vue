@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import Ranking from "./components/Ranking.vue";
+import CheerModal from "./components/CheerModal.vue";
+</script>
 
 <template>
   <main class="min-h-screen bg-gray-900 flex items-center justify-center p-6">
@@ -23,6 +26,12 @@
             alt="chatroom"
             class="w-full h-full object-cover"
           />
+
+          <!-- 排行榜 -->
+          <Ranking v-if="false"></Ranking>
+
+          <!-- 小彈窗 -->
+          <CheerModal v-if="true"></CheerModal>
         </div>
       </div>
     </div>
