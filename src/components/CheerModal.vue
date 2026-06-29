@@ -47,7 +47,7 @@ import coffeeSrc from '../assets/img/coffee.png'
           <span class="min-h-2.5 text-center text-[10px] leading-[10px]">$1</span>
         </span>
 
-        <span class="absolute -left-2.5 -top-[5px] size-[38px] overflow-hidden">
+        <span class="absolute -left-[10px] -top-[5px] size-[38px] overflow-hidden">
           <img
             class="h-full w-full object-contain object-center"
             :src="coffeeSrc"
