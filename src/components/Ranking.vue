@@ -46,15 +46,15 @@ const rankingItems = [
 ]
 
 const topCardBase =
-  'relative flex h-[60px] w-full flex-col items-center rounded-t-[10px] bg-gradient-to-b px-2.5 pt-0'
+  'relative flex h-[60px] w-full flex-col items-center rounded-t-[10px] bg-gradient-to-b px-2.5'
 
 const rankingItemBase =
-  'relative flex h-[58px] min-h-[46px] w-full items-center gap-1 overflow-hidden rounded-[10px] py-2 pr-4 shadow-[0_2px_8px_rgba(0,0,0,0.1)]'
+  'relative flex h-[58px] w-full items-center gap-1 overflow-hidden rounded-[10px] py-2 pr-4 shadow-[0_2px_8px_rgba(0,0,0,0.1)]'
 </script>
 
 <template>
   <div
-    class="absolute inset-x-0 bottom-0 z-40 flex h-[570px] w-full flex-col overflow-hidden rounded-t-2xl bg-[#272727] text-white md:hidden"
+    class="absolute inset-x-0 bottom-0 z-40 flex h-[570px] flex-col overflow-hidden rounded-t-2xl bg-[#272727] text-white md:hidden"
   >
     <img
       class="absolute inset-0 h-full w-full object-cover opacity-80"
@@ -162,7 +162,7 @@ const rankingItemBase =
 
               <!-- 名次數字 -->
               <p
-                class="relative z-10 m-0 ml-[4px] w-10 max-w-10 text-center font-['Mitr'] text-[32px] font-semibold leading-none text-white"
+                class="relative z-10 my-0 mr-0 ml-[4px] w-10 text-center font-['Mitr'] text-[32px] font-semibold leading-none text-white"
                 :class="{ 'opacity-10': !item.active }"
               >
                 {{ item.rank }}
